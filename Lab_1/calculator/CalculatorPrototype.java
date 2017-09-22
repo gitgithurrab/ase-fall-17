@@ -14,13 +14,7 @@ public class CalculatorPrototype implements CalculatorIF {
 
     @Override
     public int subtract(int m, int n){
-        if(n==0) return m;
-
-        if(n>0)
-            for(int i=0;i<n;i++) m = m - 1;
-        else
-            for(int i=0;i<-n;i++) m = m + 1;
-        return m;
+        return sum(m,-n);
     }
 
     @Override
